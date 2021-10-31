@@ -4,7 +4,7 @@ import "./About.css";
 export function AboutForm() {
   return (
     <div className="about_form">
-      This is Technical Assessment for ReactJs Application.
+      This is a technical assessment for ReactJs Application.
     </div>
   )
 }
