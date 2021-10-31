@@ -1,0 +1,23 @@
+.signin-page {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 1rem;
+}
+
+.signin-page .MuiButton-root {
+    font-size: 18px;
+}
+
+.signin-page .header {
+    text-align: center;
+}
+
+.error-text {
+    display: none;
+    color: red;
+}
+
+.error-text.show {
+    display: block;
+}

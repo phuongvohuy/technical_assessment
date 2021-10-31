@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import signInSlice from '../features/signin/SignInSlice';
 
 export const store = configureStore({
   reducer: {
-    
+    signin: signInSlice,
   },
 });
 
