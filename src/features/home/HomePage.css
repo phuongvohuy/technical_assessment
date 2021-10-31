@@ -1,0 +1,69 @@
+.homepage {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage_header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.sandwich-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu_section {
+  width: 100%;
+  height: 50px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  /* Firefox */
+  height: -moz-calc(100% - 50px);
+  /* WebKit */
+  height: -webkit-calc(100% - 50px);
+  /* Opera */
+  height: -o-calc(100% - 50px);
+  /* Standard */
+  height: calc(100% - 50px);
+  top: 50px;
+  background: #ec6451;
+  z-index: 2;
+  
+}
+
+.overlay.hide {
+  visibility: hidden;
+}
+
+.overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.overlay ul li {
+  padding: 1em;
+}
+
+.overlay ul .menu-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.overlay ul .menu-item:hover {
+  color: #333332;
+}

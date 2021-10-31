@@ -27,6 +27,10 @@ body,
   opacity: 0.5;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .loader-container.show {
   display: inline-flex;
 }
@@ -52,3 +56,31 @@ body,
   100% { transform: rotate(360deg); }
 }
 
+/* utils css class */
+.w-full {
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-10 {
+ margin-left: 10px; 
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}

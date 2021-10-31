@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/">
           <SignInPage></SignInPage>
         </Route>
-        <Route exact path="/home">
+        <Route path="/home">
           <HomePage></HomePage>
         </Route>
       </Switch>
