@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { 
   Redirect, Switch, Route,
   useRouteMatch, useLocation, useHistory
@@ -32,7 +31,6 @@ export function HomePage() {
   }
 
   const onChooseMenu = (route: string) => {
-    console.log("onChooseMenu >>", route);
     setIsMenuOpened(false);
     history.push(route);
   }

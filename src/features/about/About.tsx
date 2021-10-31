@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import "./About.css";
 
 export function AboutForm() {
