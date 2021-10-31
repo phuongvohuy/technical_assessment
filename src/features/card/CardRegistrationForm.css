@@ -1,0 +1,30 @@
+.card-registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-registration-form .MuiButton-root {
+  font-size: 18px;
+}
+
+.card-cvc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card-cvc {
+  width: 120px;
+}
+
+.card-expiry {
+  width: 90px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+}
