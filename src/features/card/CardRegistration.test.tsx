@@ -69,12 +69,12 @@ describe('test suite', () => {
       fireEvent.change(cvcElement, {target: {value: cvcNo}});
       fireEvent.change(expiryDateElement, {target: {value: cardExpiry}});
   
-      // Check card valid
+      // Check Submit button is enable with valid form
       const enableBtn = container.querySelector("Button:not([disabled])");
       expect(enableBtn).toBeInTheDocument();
 
 
-      // Check card invalid
+      // Check Submit button is disabled with invalid form data
       fireEvent.change(expiryDateElement, {target: {value: invalidCardExpiry}});
       const disabledBtn = container.querySelector("Button[disabled]");
       expect(disabledBtn).toBeInTheDocument();

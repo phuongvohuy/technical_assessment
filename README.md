@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# ASB-coding-test Project purpose
 
-## Available Scripts
+- To build a ReactJS application to allow the user to sign in using mock data. Upon Logging in successfully, users can navigate to see the Card Registration Form, The About Form or to logout to return the sign-in page.
+- The application will be responsive when running in different browser resolutions and on mobile.
 
-In the project directory, you can run:
+## Required Tools
 
-### `yarn start`
+- You need to install NodeJs: `https://nodejs.org/en/`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Run dev server
 
-### `yarn test`
+- Go to the root folder of the project then run `yarn install`.
+- Then run `yarn start`, it then starts a dev server.
+- Open the browser and use the URL: `http://localhost:4200/` to view the application.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run testing
 
-### `yarn build`
+- Go to the root folder and run `yarn test`.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Application design
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- All Components follow the Functional Component way which is recommended by ReactJS.
+- All Form controls(Text Fields, Button, and some Icon) in our application is from ReactJs material library(`https://mui.com/`) Which follow the standard material design patterns.
+- We use the ReactRouter library(`https://reactrouter.com/`) to handle the routing between pages.
+- We use `Redux` library to manage the application state, and we use `Redux-Thunk` to handle the asynchronous API call in pages. We can think of using `Redux-observable` instead of Redux Thunk when the application business logic grows and becomes complicated. 
+- The way we handle responsiveness is very straightforward. All the screen is horizontal centre on the Desktop. And on Mobile, all the pages take the full width of the device.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Here are all the component and their description:
+	1. SignIn: 
+		* Please use the mock username and password under `src\mock\user_list` to login.
+	2. HomePage: 
+		* This page handles how to display the menu and how to render forms(Card Registration form, About Form).
+    * Handle the navigation between Card Registration Form, About Form and Logout.
+  3. Card Registration Form:
+    * We implement the form validation in the component. Form Validation rules are as below:
+      - All Fields should not empty.
+      - The card number should be number and should have a length of 10.
+      - The CVC number should be number and should have a length of 3.
+      - The Expiry Date should be a valid Date format..
+  4. About Form
+    * A static page.
 
-### `yarn eject`
+#### Unit Test: 
+  - We have some unit Test and Component rendering Test as below:
+    * `App.test.tsx`: Unit Test for Application Routing
+    * `SignIn.test.tsx`: Unit Test for Redux State for SignIn page.
+    * `CardRegistration.test.tsx`: Unit Test for Form Validation, and Test if Submit button is disable or enable base on some form testing data.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
