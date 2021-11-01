@@ -11,7 +11,7 @@
 
 - Go to the root folder of the project then run `yarn install`.
 - Then run `yarn start`, it then starts a dev server.
-- Open the browser and use the URL: `http://localhost:4200/` to view the application.
+- Open the browser and use the URL: `http://localhost:3000/` to view the application.
 
 ## Run testing
 
