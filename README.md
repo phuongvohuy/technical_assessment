@@ -1,4 +1,4 @@
-# ASB-coding-test Project purpose
+## ASB-coding-test Project purpose
 
 - To build a ReactJS application to allow the user to sign in using mock data. Upon Logging in successfully, users can navigate to see the Card Registration Form, The About Form or to logout to return the sign-in page.
 - The application will be responsive when running in different browser resolutions and on mobile.
@@ -8,17 +8,17 @@
 - You need to install NodeJs: `https://nodejs.org/en/`
 
 
-### Run dev server
+## Run dev server
 
 - Go to the root folder of the project then run `yarn install`.
 - Then run `yarn start`, it then starts a dev server.
 - Open the browser and use the URL: `http://localhost:4200/` to view the application.
 
-### Run testing
+## Run testing
 
 - Go to the root folder and run `yarn test`.
 
-#### Application design
+## Application design
 
 - All Components follow the Functional Component way which is recommended by ReactJS.
 - All Form controls(Text Fields, Button, and some Icon) in our application is from ReactJs material library(`https://mui.com/`) Which follow the standard material design patterns.
@@ -41,7 +41,7 @@
   4. About Form
     * A static page.
 
-#### Unit Test: 
+## Unit Test: 
   - We have some unit Test and Component rendering Test as below:
     * `App.test.tsx`: Unit Test for Application Routing
     * `SignIn.test.tsx`: Unit Test for Redux State for SignIn page.
