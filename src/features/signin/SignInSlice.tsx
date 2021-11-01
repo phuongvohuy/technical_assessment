@@ -52,8 +52,14 @@ export const signInSlice = createSlice({
     name: "signin",
     initialState: initialState,
     reducers: {
-        updateSignInInfo: (state: SignInState, payload: PayloadAction<SignInInfo>) => {
-
+        updateUserInfo: (state: SignInState, payload: PayloadAction<UserInfo>) => {
+            state.userInfo = payload.payload;
+        },
+        displayLoading: (state: SignInState, payload: PayloadAction) => {
+            state.authoriseStatus.status = STATUS.LOADING;
+        },
+        hideLoading: (state: SignInState, payload: PayloadAction) => {
+            state.authoriseStatus.errorMsg = STATUS.NORMAL;
         }
     },
     extraReducers: (builder) => {
@@ -87,7 +93,7 @@ export const signInSlice = createSlice({
 });
 
 // export action
-export const { updateSignInInfo } = signInSlice.actions;
+export const { updateUserInfo, displayLoading, hideLoading} = signInSlice.actions;
 
 // export signin status
 export const retrieveAuthoriseStatusSelector = (state: any) => state.signin.authoriseStatus;

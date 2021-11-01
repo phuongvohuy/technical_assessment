@@ -62,7 +62,7 @@ export function HomePage() {
       <div className={"overlay " + overlayClass}>
         <ul>
           <li className="menu-item" onClick={() => onChooseMenu(path)}>Home</li>
-          <li className="menu-item" onClick={() => onChooseMenu(aboutRoutePath)}>About</li>
+          <li className="menu-item about-menu-item" onClick={() => onChooseMenu(aboutRoutePath)}>About</li>
           <li className="menu-item" onClick={() => onLogoutHandler()}>Logout</li>
         </ul>
       </div>

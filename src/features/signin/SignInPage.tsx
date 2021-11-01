@@ -25,8 +25,8 @@ export function SignInPage() {
   return (
     <div className="signin-page">
       <h2 className="header">Sign In</h2>
-      <TextField variant="outlined" label="User Name" value={userName} onChange={(event) => setUserName(event.target.value)}></TextField>
-      <TextField variant="outlined" label="Password" type="password" value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
+      <TextField variant="outlined" placeholder="User Name" label="User Name" value={userName} onChange={(event) => setUserName(event.target.value)}></TextField>
+      <TextField variant="outlined" placeholder="Password" label="Password" type="password" value={password} onChange={(event) => setPassword(event.target.value)}></TextField>
       <div className={isAuthorisedFailed ? "error-text show" : "error-text"}>
         {loadingStatus.errorMsg}
       </div>
